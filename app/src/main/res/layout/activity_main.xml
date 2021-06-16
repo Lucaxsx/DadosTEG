@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".MainActivity"
+    android:orientation="horizontal"
+    >
+
+    <ImageView
+        android:id="@+id/divider"
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:background="@color/black"
+        android:contentDescription="@string/divider"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@android:drawable/divider_horizontal_bright" />
+
+    <ImageButton
+        android:id="@+id/reset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@null"
+        android:contentDescription="@string/dado_description"
+        android:rotation="90"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/reset" />
+
+    <ImageButton
+        android:id="@+id/atacar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="35dp"
+        android:layout_marginEnd="130dp"
+        android:background="@null"
+        android:contentDescription="@string/dado_description"
+        android:rotation="20"
+        app:layout_constraintEnd_toStartOf="@+id/divider"
+        app:layout_constraintHorizontal_bias="0.76"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/atacante" />
+
+    <ImageView
+        android:id="@+id/aDado1"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="100dp"
+        android:background="@color/black"
+        android:contentDescription="@string/dado_description"
+        android:rotation="90"
+        app:layout_constraintEnd_toStartOf="@+id/divider"
+        app:layout_constraintHorizontal_bias="0.728"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/dadovacio" />
+
+    <ImageView
+        android:id="@+id/aDado2"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginBottom="76dp"
+        android:contentDescription="@string/dado_description"
+        android:rotation="90"
+        app:layout_constraintBottom_toTopOf="@+id/aDado3"
+        app:layout_constraintEnd_toStartOf="@+id/divider"
+        app:layout_constraintHorizontal_bias="0.728"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/aDado1"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/dadovacio" />
+
+    <ImageView
+        android:id="@+id/aDado3"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginBottom="72dp"
+        android:contentDescription="@string/dado_description"
+        android:rotation="90"
+        app:layout_constraintBottom_toTopOf="@+id/aDado4"
+        app:layout_constraintEnd_toStartOf="@+id/divider"
+        app:layout_constraintHorizontal_bias="0.728"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/dadovacio" />
+
+    <ImageView
+        android:id="@+id/aDado4"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginBottom="100dp"
+        android:contentDescription="@string/dado_description"
+        android:rotation="90"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/divider"
+        app:layout_constraintHorizontal_bias="0.728"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/dadovacio" />
+
+    <ImageView
+        android:id="@+id/dDado1"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="104dp"
+        android:contentDescription="@string/dado_description"
+        android:rotation="-90"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.28"
+        app:layout_constraintStart_toEndOf="@+id/divider"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/dadovacio" />
+
+    <ImageView
+        android:id="@+id/dDado2"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:contentDescription="@string/dado_description"
+        android:rotation="-90"
+        app:layout_constraintBottom_toTopOf="@+id/dDado3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.288"
+        app:layout_constraintStart_toEndOf="@+id/divider"
+        app:layout_constraintTop_toBottomOf="@+id/dDado1"
+        app:layout_constraintVertical_bias="0.437"
+        app:srcCompat="@drawable/dadovacio" />
+
+    <ImageView
+        android:id="@+id/dDado3"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginBottom="72dp"
+        android:contentDescription="@string/dado_description"
+        android:rotation="-90"
+        app:layout_constraintBottom_toTopOf="@+id/dDado4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.288"
+        app:layout_constraintStart_toEndOf="@+id/divider"
+        app:srcCompat="@drawable/dadovacio" />
+
+    <ImageView
+        android:id="@+id/dDado4"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginBottom="100dp"
+        android:contentDescription="@string/dado_description"
+        android:rotation="-90"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.288"
+        app:layout_constraintStart_toEndOf="@+id/divider"
+        app:srcCompat="@drawable/dadovacio" />
+
+    <TextView
+        android:id="@+id/atacante"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="100dp"
+        android:rotation="90"
+        android:textStyle="bold"
+        android:text="@string/atacante"
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/divider"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.499" />
+
+    <TextView
+        android:id="@+id/defensor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="100dp"
+        android:rotation="-90"
+        android:textStyle="bold"
+        android:text="@string/defensor"
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/divider"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.499" />
+
+    <Button
+        android:id="@+id/atUno"
+        android:layout_width="50dp"
+        android:layout_height="46dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginEnd="136dp"
+        android:rotation="90"
+        android:text="@string/uno"
+        app:layout_constraintEnd_toStartOf="@+id/divider"
+        app:layout_constraintTop_toBottomOf="@+id/atacante" />
+
+    <Button
+        android:id="@+id/atDos"
+        android:layout_width="50dp"
+        android:layout_height="46dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="136dp"
+        android:rotation="90"
+        android:text="@string/dos"
+        app:layout_constraintEnd_toStartOf="@+id/divider"
+        app:layout_constraintTop_toBottomOf="@+id/atUno" />
+
+    <Button
+        android:id="@+id/atTres"
+        android:layout_width="50dp"
+        android:layout_height="46dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="136dp"
+        android:rotation="90"
+        android:text="@string/tres"
+        app:layout_constraintEnd_toStartOf="@+id/divider"
+        app:layout_constraintTop_toBottomOf="@+id/atDos" />
+
+    <Button
+        android:id="@+id/atCuatro"
+        android:layout_width="50dp"
+        android:layout_height="46dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="136dp"
+        android:rotation="90"
+        android:text="@string/cuatro"
+        app:layout_constraintEnd_toStartOf="@+id/divider"
+        app:layout_constraintTop_toBottomOf="@+id/atTres" />
+
+    <Button
+        android:id="@+id/defUno"
+        android:layout_width="50dp"
+        android:layout_height="46dp"
+        android:layout_marginStart="140dp"
+        android:layout_marginBottom="80dp"
+        android:rotation="-90"
+        android:text="@string/uno"
+        app:layout_constraintBottom_toTopOf="@+id/defensor"
+        app:layout_constraintStart_toEndOf="@+id/divider" />
+
+    <Button
+        android:id="@+id/defDos"
+        android:layout_width="50dp"
+        android:layout_height="46dp"
+        android:layout_marginStart="140dp"
+        android:layout_marginBottom="20dp"
+        android:rotation="-90"
+        android:text="@string/dos"
+        app:layout_constraintBottom_toTopOf="@+id/defUno"
+        app:layout_constraintStart_toEndOf="@+id/divider" />
+
+    <Button
+        android:id="@+id/defTres"
+        android:layout_width="50dp"
+        android:layout_height="46dp"
+        android:layout_marginStart="140dp"
+        android:layout_marginBottom="20dp"
+        android:rotation="-90"
+        android:text="@string/tres"
+        app:layout_constraintBottom_toTopOf="@+id/defDos"
+        app:layout_constraintStart_toEndOf="@+id/divider" />
+
+    <Button
+        android:id="@+id/defCuatro"
+        android:layout_width="50dp"
+        android:layout_height="46dp"
+        android:layout_marginStart="140dp"
+        android:layout_marginBottom="20dp"
+        android:rotation="-90"
+        android:text="@string/cuatro"
+        app:layout_constraintBottom_toTopOf="@+id/defTres"
+        app:layout_constraintStart_toEndOf="@+id/divider" />
+
+    <ImageButton
+        android:id="@+id/defender"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="130dp"
+        android:layout_marginBottom="35dp"
+        android:background="@null"
+        android:contentDescription="@string/dado_description"
+        android:rotation="-110"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.384"
+        app:layout_constraintStart_toStartOf="@+id/divider"
+        app:srcCompat="@drawable/defensor" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

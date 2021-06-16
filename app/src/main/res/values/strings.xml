@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Dados TEG</string>
+    <string name="divider">Divider</string>
+    <string name="dado_description">Dado</string>
+    <string name="lanzar">Lanzar</string>
+    <string name="atacante">Atacante</string>
+    <string name="defensor">Defensor</string>
+    <string name="uno">I</string>
+    <string name="dos">II</string>
+    <string name="tres">III</string>
+    <string name="cuatro">IV</string>
+</resources>
